@@ -1,0 +1,3 @@
+10 PRINT "What is your name? "
+20 INPUTSTR name
+30 PRINTLN "Hello, " + name

@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/dinodos/!svn/ver/176/trunk/project6
+END
+dir.img
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/dinodos/!svn/ver/161/trunk/project6/dir.img
+END
+system.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/dinodos/!svn/ver/161/trunk/project6/system.c
+END
+LineConverter.java
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/dinodos/!svn/ver/174/trunk/project6/LineConverter.java
+END
+bootload.asm
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/dinodos/!svn/ver/170/trunk/project6/bootload.asm
+END
+floppya.img
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/dinodos/!svn/ver/171/trunk/project6/floppya.img
+END
+message.txt
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/dinodos/!svn/ver/161/trunk/project6/message.txt
+END
+opsys.bxrc
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/dinodos/!svn/ver/161/trunk/project6/opsys.bxrc
+END
+system.h
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/dinodos/!svn/ver/161/trunk/project6/system.h
+END
+kernel.asm
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/dinodos/!svn/ver/161/trunk/project6/kernel.asm
+END
+proc.c
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/dinodos/!svn/ver/161/trunk/project6/proc.c
+END
+script
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/dinodos/!svn/ver/161/trunk/project6/script
+END
+compileOS.bash
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/dinodos/!svn/ver/176/trunk/project6/compileOS.bash
+END
+markExecutable.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/dinodos/!svn/ver/161/trunk/project6/markExecutable.c
+END
+proc.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/dinodos/!svn/ver/161/trunk/project6/proc.h
+END
+map.img
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/dinodos/!svn/ver/170/trunk/project6/map.img
+END
+dinoBASIC.html
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/dinodos/!svn/ver/168/trunk/project6/dinoBASIC.html
+END
+lib.asm
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/dinodos/!svn/ver/161/trunk/project6/lib.asm
+END
+kernel.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/dinodos/!svn/ver/161/trunk/project6/kernel.c
+END
+loadFile.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/dinodos/!svn/ver/161/trunk/project6/loadFile.c
+END
+kernel.h
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/dinodos/!svn/ver/161/trunk/project6/kernel.h
+END
+testproc.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/dinodos/!svn/ver/161/trunk/project6/testproc.c
+END
+usrs
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/dinodos/!svn/ver/171/trunk/project6/usrs
+END

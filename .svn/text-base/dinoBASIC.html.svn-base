@@ -1,0 +1,223 @@
+<html>
+	<head>
+		<title>dinoBASIC README</title>
+	</head>
+	<body>
+		<h1>dinoBASIC</h1>
+		<h2>John Jones and Russell Toris (c) 2010</h2>
+		<h3>Introduction</h3>
+		<p>dinoBASIC is a simple BASIC interpreter for the dinoDOS operating system.  The syntax is a modified form of very early BASIC interpreters.  The point of this program is to give dinoDOS users the ability to write programs while in the system and not have to compile them on another system.  While limited, dinoBASIC allows for simple program creation to demonstrate the features of dinoDOS.</p>
+		<p>Program commands beginning with a line number are stored for later execution while commands without a starting line number are executed immediately.  The stored program can be save to disk and later loaded back into the dinoBASIC interpreter.</p>
+		</p>Variables in the program can be either strings or integers.  Both use the same naming convention.  Additionally, variables are dynamically typed so a variable can be assigned an integer or string at any time.</p>
+		<p>Also, dinoBASIC takes advantage of dinoDOS's VGA libraries allowing users of dinoBASIC to create graphical programs.  Users can also access the system's <i>amazing</i> VGA color palette.</p>
+		<h3>Command Groups</h3>
+		<p>There are several categories of commands available in dinoBASIC.  They are catagorized here for convenience:</p>
+		<h4>Graphics</h4>
+		<ul>
+			<li><a href="#CIRCLE">CIRCLE</a> - Draw a circle</li>
+			<li><a href="#COLOR">COLOR</a> - Set the drawing color</li>
+			<li><a href="#GRAPHICS">GRAPHICS</a> - Set the display to VGA mode</li>
+			<li><a href="#LINE">LINE</a> - Draw a line</li>
+			<li><a href="#PLOT">PLOT</a> - Draw a single pixel</li>
+			<li><a href="#RECT">RECT</a> - Draw a rectangle</li>
+			<li><a href="#TEXT">TEXT</a> - Set the display to text mode</li>
+		</ul>
+		<h4>Input/Ouput</h4>
+		<ul>
+			<li><a href="#INPUTINT">INPUTINT</a> - Input an integer</li>
+			<li><a href="#INPUTSTR">INPUTSTR</a> - Input a string</li>
+			<li><a href="#PRINT">PRINT</a> - Print a value</li>
+			<li><a href="#PRINTLN">PRINTLN</a> - Print a value with a newline</li>
+		</ul>
+		<h4>Program Control</h4>
+		<ul>
+			<li><a href="#END">END</a> - End the program</li>
+			<li><a href="#ENDIF">ENDIF</a> - End an IF-THEN block</li>
+			<li><a href="#GOTO">GOTO</a> - Go to a given line number</li>
+			<li><a href="#IFTHEN">IFTHEN</a> - Run a block of commands if a given expression is true</li>
+			<li><a href="#LET">LET</a> - Assign a value to a variable</li>
+			<li><a href="#WHILE">WHILE</a> - Loop while a given expression is true</li>
+		</ul>
+		<h4>Utilites</h4>
+		<ul>
+			<li><a href="#CLEAR">CLEAR</a> - Clear the program and variables</li>
+			<li><a href="#HOME">HOME</a> - Clear the screen</li>
+			<li><a href="#LIST">LIST</a> - List the commands in the program</li>
+			<li><a href="#LOAD">LOAD</a> - Load a program from the disk</li>
+			<li><a href="#RUN">RUN</a> - Run the program</li>
+			<li><a href="#STORE">STORE</a> - Store the program to disk</li>
+		</ul>
+		<h3>Grammer</h3>
+		<p>The grammar for dinoBASIC is as follows:</p>
+		<table border=1>
+			<tr>
+				<td><b>Production</b></td>
+				<td><b>Composition</b></td>
+				<td><b>Description</b></td>
+			</tr>
+			<tr>
+				<td>&lt;line&gt; &lt;command&gt;</td>
+				<td></td>
+				<td>Any given command</td>
+			</tr>
+			<tr>
+				<td>&lt;command-block&gt;</td>
+				<td>&lt;line&gt; &lt;command&gt; &lt;command-block | lambda</td>
+				<td>A group of commands</td>
+			</tr>
+			<tr>
+				<td>&lt;line&gt;</td>
+				<td>&lt;integer&gt; | lambda</td>
+				<td>An integer value representing where the command is to be stored in the prgram array</td>
+			</tr>
+			<tr>
+				<td rowspan=23>&lt;command&gt;</td>
+				<td><a name="CIRCLE" />CIRCLE &lt;ordered pair&gt; R &lt;expression&gt;</td>
+				<td>Draw a circle at the ordered pair with a given radius</td>
+			</tr>
+			<tr>
+				<td><a name="CLEAR" />CLEAR</td>
+				<td>Erase all stored variables and the stored program</td>
+			</tr>
+			<tr>
+				<td><a name="COLOR" />COLOR &lt;expression&gt;</td>
+				<td>Set the drawing color to a VGA color value </td>
+			</tr>
+			<tr>
+				<td><a name="END" />END</td>
+				<td>Stop execution</td>
+			</tr>
+			<tr>
+				<td><a name="ENDIF" />ENDIF</td>
+				<td>Signifies the end of an IF block</td>
+			</tr>
+			<tr>
+				<td><a name="GOTO" />GOTO &lt;line&gt;</td>
+				<td>Jump to a given line</tr>
+			</tr>
+			<tr>
+				<td><a name="GRAPHICS" />GRAPHICS</td>
+				<td>Set the display to graphics mode (Disable text-based commands)</td>
+			</tr>
+			<tr>
+				<td><a name="HOME" />HOME</td>	
+				<td>Clear the screen</td>
+			</tr>
+			<tr>
+				<td><a name="IFTHEN" />IF &lt;boolean expression&gt; THEN &lt;command-block&gt;</td>
+				<td>Evaluates the boolean expression and executes the command or block if true</td>
+			</tr>
+			<tr>
+				<td><a name="INPUTINT" />INPUTINT &lt;variable&gt;
+				<td>Get input from the command line as an integer.</td>
+			</tr>
+			<tr>
+				<td><a name="INPUTSTR" />INPUTSTR &lt;variable&gt;</td>
+				<td>Get input from the command line as a string.</td>
+			</tr>
+			<tr>
+				<td><a name="LET" />LET &lt;assignment expression&gt;</td>
+				<td>Assign the value of an expression to a variable</td>
+			</tr>
+			<tr>
+				<td><a name="LINE" />LINE &lt;ordered pair&gt; TO &lt;ordered pair&gt;</td>
+				<td>Draw a line from the first pair to the second pair</td>
+			</tr>
+			<tr>
+				<td><a name="LIST" />LIST</td>	
+				<td>Print the stored program commands</td>
+			</tr>
+			<tr>
+				<td><a name="LOAD" />LOAD &lt;filename&gt;</td>
+				<td>Load a text file as a program</td>
+			</tr>
+			<tr>
+				<td><a name="PLOT" />PLOT &lt;ordered pair&gt;</td>
+				<td>Draw a point at the ordered pair</td>
+			</tr>
+			<tr>
+				<td><a name="PRINT" />PRINT &lt;expression&gt;</td>
+				<td>Print out the value of the expression</td>
+			</tr>
+			<tr>
+				<td><a name="PRINTLN" />PRINTLN &lt;expression&gt;</td>
+				<td>Print out the value of the expression and an newline character</td>
+			</tr>
+			<tr>
+				<td><a name="RECT" />RECT &lt;ordered pair&gt; W &lt;expression&gt; H &lt;expression&gt;</td>
+				<td>Draw a rectangle at the ordered pair with a given height and width</td>
+			</tr>
+			<tr>
+				<td><a name="RUN" />RUN</td>
+				<td>Execute the stored program</td>
+			</tr>
+			<tr>
+				<td><a name="STORE" />STORE &lt;filename&gt;</td>
+				<td>Write the contents of the stored program to disk</td>
+			</tr>
+			<tr>
+				<td><a name="TEXT" />TEXT</td>
+				<td>Set the display to text mode (Disable graphics-based commands)</td>
+			</tr>
+			<tr>
+				<td><a name="WHILE" />WHILE &lt;boolean expression&gt; &lt;command-block&gt;</td>
+				<td>Loops until the boolean expression is false</td>
+			</tr>
+			<tr>
+				<td>&lt;assignment expression&gt;</td>
+				<td>&lt;variable&gt; = &lt;expression&gt;</td>
+				<td>Assign the result of the expression to the variable</td>
+			</tr>
+			<tr>
+				<td>&lt;expression&gt;</td>
+				<td>&lt;value&gt; &lt;mathop&gt; &lt;value&gt; | &lt;value&gt;</td>
+				<td>Evaluate an expression</td>
+			</tr>
+			<tr>				
+				<td>&lt;value&gt;</td>
+				<td>&lt;variable&gt; | &lt;constant&gt;</td>
+				<td>Represents any data</td>
+			</tr>
+			<tr>
+				<td>&lt;variable&gt;</td>
+				<td></td>
+				<td>Any string of characters A to Z</td>
+			</tr>
+			<tr>
+				<td>&lt;constant&gt;</td>
+				<td>&lt;integer&gt; | &lt;string&gt;</td>
+				<td>Constant values such as '5' or '"String"'</td>
+			</tr>
+			<tr>
+				<td>&lt;integer&gt;</td>
+				<td></td>
+				<td>Any digit</td>
+			</tr>
+			<tr>
+				<td>&lt;string&gt;</td>
+				<td></td>
+				<td>Any character string enclosed by '"'</td>
+			</tr>
+			<tr>
+				<td>&lt;boolean expression&gt;</td>
+				<td>&lt;expression&gt; &lt;boolop&gt; &lt;expression&gt;</td>
+				<td>Evaluates to TRUE or FALSE</td>
+			</tr>
+			<tr>
+				<td>&lt;boolop&gt;</td>
+				<td>= | &gt; | &lt; | &lt;= | &gt;=</td>
+				<td>Common boolean operators</td>
+			</tr>
+			<tr>
+				<td>&lt;mathop&gt;</td>
+				<td>+ | - | * | /</td>
+				<td>Common arithmetic operators</td>
+			</tr>
+			<tr>
+				<td>&lt;ordered pair&gt;</td>
+				<td>&lt;expression&gt;,&lt;expression&gt;</td>
+				<td>A pair of expression representing x and y values</td>
+			</tr>
+		</table>
+	</body>
+</html>

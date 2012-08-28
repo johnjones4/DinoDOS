@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/dinodos/!svn/ver/173/trunk/project6/usr/lib
+END
+math.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/dinodos/!svn/ver/161/trunk/project6/usr/lib/math.h
+END
+sys.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/dinodos/!svn/ver/161/trunk/project6/usr/lib/sys.c
+END
+stdio.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/dinodos/!svn/ver/161/trunk/project6/usr/lib/stdio.h
+END
+vga.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/dinodos/!svn/ver/173/trunk/project6/usr/lib/vga.c
+END
+string.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/dinodos/!svn/ver/161/trunk/project6/usr/lib/string.c
+END
+stdlib.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/dinodos/!svn/ver/161/trunk/project6/usr/lib/stdlib.c
+END
+sys.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/dinodos/!svn/ver/161/trunk/project6/usr/lib/sys.h
+END
+vga.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/dinodos/!svn/ver/161/trunk/project6/usr/lib/vga.h
+END
+string.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/dinodos/!svn/ver/161/trunk/project6/usr/lib/string.h
+END
+stdlib.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/dinodos/!svn/ver/161/trunk/project6/usr/lib/stdlib.h
+END
+math.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/dinodos/!svn/ver/161/trunk/project6/usr/lib/math.c
+END
+stdio.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/dinodos/!svn/ver/161/trunk/project6/usr/lib/stdio.c
+END
